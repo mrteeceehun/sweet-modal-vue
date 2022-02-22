@@ -58,7 +58,7 @@
 			<!-- Content: Wrapper -->
 			<div class="sweet-content" ref="content">
 				<!-- Icon: Error -->
-				<div class="sweet-modal-icon sweet-modal-error" v-if="icon == 'error'" ref="icon_error">
+				<div class="sweet-modal-icon sweet-modal-error" v-show="icon == 'error'" ref="icon_error">
 					<span class="sweet-modal-x-mark">
 						<span class="sweet-modal-line sweet-modal-left"></span>
 						<span class="sweet-modal-line sweet-modal-right"></span>
@@ -66,16 +66,16 @@
 				</div>
 
 				<!-- Icon: Warning -->
-				<div class="sweet-modal-icon sweet-modal-warning" v-if="icon == 'warning'" ref="icon_warning">
+				<div class="sweet-modal-icon sweet-modal-warning" v-show="icon == 'warning'" ref="icon_warning">
 					<span class="sweet-modal-body"></span>
 					<span class="sweet-modal-dot"></span>
 				</div>
 
 				<!-- Icon: Info -->
-				<div class="sweet-modal-icon sweet-modal-info" v-if="icon == 'info'" ref="icon_info"></div>
+				<div class="sweet-modal-icon sweet-modal-info" v-show="icon == 'info'" ref="icon_info"></div>
 
 				<!-- Icon: Success -->
-				<div class="sweet-modal-icon sweet-modal-success" v-if="icon == 'success'" ref="icon_success">
+				<div class="sweet-modal-icon sweet-modal-success" v-show="icon == 'success'" ref="icon_success">
 					<span class="sweet-modal-line sweet-modal-tip"></span>
 					<span class="sweet-modal-line sweet-modal-long"></span>
 					<div class="sweet-modal-placeholder"></div>
